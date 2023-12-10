@@ -44,7 +44,7 @@ public Action Command_Discord(int client, int args)
 		CPrintToChat(client, "{lightgreen}You need to wait {green}%.1f {lightgreen}more time to use this command.", ((g_fSeconds[client] + RoundFloat(GetConVarFloat(gcV_DiscordCountdownTime))) - RoundFloat(GetGameTime())));
 	}
 	else {
-		CPrintToChat(client, "{blue}[{aqua}ZSI{blue}] {green}Discord {lightgreen}Group : {white}https://discord.gg/dXNQs65dqd");
+		CPrintToChat(client, "{grey}[{green}ZSI{grey}] {green}Discord {lightgreen}Group : {white}https://discord.gg/dXNQs65dqd");
 	}
 
 	g_fSeconds[client] = GetGameTime();
@@ -58,7 +58,7 @@ public Action Command_Steam(int client, int args)
 		CPrintToChat(client, "{lightgreen}You need to wait {green}%.1f {lightgreen}more time to use this command.", ((g_fSeconds[client] + RoundFloat(GetConVarFloat(gcV_SteamCountdownTime))) - RoundFloat(GetGameTime())));
 	}
 	else {
-		CPrintToChat(client, "{blue}[{aqua}ZSI{blue}] {green}Steam {lightgreen}Group : {white}https://steamcommunity.com/groups/offlinersv");
+		CPrintToChat(client, "{grey}[{green}ZSI{grey}] {green}Steam {lightgreen}Group : {white}https://steamcommunity.com/groups/offlinersv");
 	}
 	
 	g_fSeconds[client] = GetGameTime();
